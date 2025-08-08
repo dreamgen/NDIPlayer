@@ -1,0 +1,39 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# NDI SDK 備份資料夾（避免重複版本控制）
+jniLibs_backup/
+jniLibs_backup2/
+
+# Android APK 和 Bundle 檔案
+*.apk
+*.aab
+*.aar
+
+# 日誌檔案
+*.log
+
+# Keystore 檔案（敏感資料）
+*.jks
+*.keystore
+
+# macOS 系統檔案
+.AppleDouble
+.LSOverride
+
+# 暫存檔案
+*.tmp
+*.temp
