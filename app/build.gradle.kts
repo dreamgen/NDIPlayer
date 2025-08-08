@@ -36,13 +36,7 @@ android {
     //     }
     // }
 
-    packaging {
-        jniLibs {
-            pickFirsts += listOf("**/libc++_shared.so", "**/libndi.so")
-            keepDebugSymbols += "**/libndi.so"
-            excludes += listOf("**/mips/**", "**/mips64/**")
-        }
-    }
+    // Devolay 不需要 native packaging 設定
 
     buildTypes {
         release {
@@ -81,4 +75,10 @@ dependencies {
     
     // 協程支援
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
+    
+    // Devolay - Java NDI 函式庫
+    implementation("me.walkerknapp:devolay:2.1.0")
+    
+    // 網路探索支援
+    implementation("org.jmdns:jmdns:3.5.8")
 }
